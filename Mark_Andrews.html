@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mark_Andrews.css">
+    <title>Yellow Belt Exam</title>
+</head>
+<body>
+    <div id=topline></div>
+    <div class="nav flex-center">
+        <h1>Gaming<span>Dojo</span></h1>
+        <div class="nav-links flex-center">
+            <select name="currencies" class="currencies">
+                <option value="euro">Euro €</option>
+                <option value="usd">USD $</option>
+            </select>
+            <a href="#" class="cart flex-center">
+                <img src="./images/cart-light.png" alt="shopping cart">
+                <span id="cart-count">0</span>
+            </a>
+            <a href="#" class="search"><img src="./images/search-light.png" alt="search icon"></a>
+        </div>
+    </div>
+    <div class="banner flex-center">
+        <h2 id="highlights">Highlights</h2>
+        <div class="slideshow flex-center">
+            <div class="scroll">
+                <img src="./images/chevron-left.png" alt="left" onclick="previousImg()">
+            </div>
+            <div class="banner-image">
+                <img id="slideshow" src="./images/" alt="slideshow">
+            </div>
+            <div class="scroll">
+                <img id="right-arrow" src="./images/chevron-left.png" alt="right" onclick="nextImg()">
+            </div>
+        </div>
+        <div class="lines">
+            <p class="line1"></p>
+            <span class="line2"></span>
+            <span class="line3"></span>
+            <span class="line4"></span>
+        </div>
+    </div>
+    <div class="topgames">
+        <div class="card">
+            <img src="./images/cafe-neko.png" alt="cafe neko">
+            <h2 id="cafe">Cafe Neko: Gold Edition</h2>
+            <p class="platforms">
+                <img src="./images/windows.png" alt="Windows">
+                <img src="./images/apple.png" alt="Mac">
+            </p>
+            <div class="saleprice flex-center">
+                <button type="button" class="discounts">-20%</button>
+                <div class="pricebox flex-center">
+                    <p class="originalprices">€ 14.98</p>
+                    <h2 class="price">€ 10.49</h2>
+                </div>
+                <button type="button" class="purchase" onclick="addToCart('cart-count')">Buy</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/pixel-ninjas-2.png" alt="pixel ninjas">
+            <h2>Pixel Ninja 2</h2>
+            <p class="platforms">
+                <img src="./images/windows.png" alt="Windows">
+                <img src="./images/apple.png" alt="Mac">
+            </p>
+            <div class="saleprice flex-center">
+                <button type="button" class="discounts">-10%</button>
+                <div class="pricebox flex-center">
+                    <p class="originalprices">€ 8.19</p>
+                    <h2 class="price">€ 7.39</h2>
+                </div>
+                <button type="button" class="purchase" onclick="addToCart('cart-count')">Buy</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/stonepunk.png" alt="stonepunk">
+            <h2>Stonepunk 10,000 BCE</h2>
+            <p class="platforms">
+                <img src="./images/windows.png" alt="Windows">
+                <img src="./images/apple.png" alt="Mac">
+                <img src="./images/linux.png" alt="Linux" onclick="linuxAvailable()">
+            </p>
+            <div class="saleprice flex-center">
+                <button type="button" class="discounts">NEW</button>
+                <div class="pricebox flex-center">
+                    <p class="originalprices">--</p>
+                    <h2 class="price">€ 19.99</h2>
+                </div>
+                <button type="button" class="purchase" onclick="addToCart('cart-count')">Buy</button>
+            </div>
+        </div>
+    </div>
+    <script src="Mark_Andrews.js"></script>
+</body>
+</html>
